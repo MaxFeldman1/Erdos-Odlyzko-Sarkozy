@@ -4,3 +4,4 @@ import EOS.LogFour
 import EOS.LogSquare
 import EOS.Buchstab
 import EOS.ThreePrimes
+import EOS.GapH4

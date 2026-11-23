@@ -35,28 +35,14 @@ Remarks on §2.3 found while formalizing: the lower bound `2 ≤ z` in Lemma C i
 their `M_j` (overlaps are harmless); the decomposition `π = ν + δ` holds for any `ν_j`, so the
 certificate is valid for every choice of centring, not only `ρ|I_j|′`.
 
-## The intended gap theorem (sketch only; not stated as a Lean theorem here)
+## The gap theorem
 
-Per §5 of the synthesis, the final theorem should read
-
-  `theorem eos_of_H4 (hT : TypeISifted) (hR : RoughCounts) (hH : H4 η) : Conjecture`
-
-quantified as "`∃ η₀ > 0, ∀ η ∈ (0, η₀], …`", where
-* `TypeISifted` is a named `Prop` for Lemma 2.1 of `notes/brainstorm/r1-analytic.md`:
-  `S(A_a, z) ≥ ρ Φ_m(m, z)(1 − C e^{−s}) − m^{1−c}` uniformly in units `a`, with `z = m^η`,
-  `s = 1/(17η)`. It is an **unconditional** theorem (Fouvry–Shparlinski Type I bound plus the
-  fundamental lemma of sieve theory), cited, not proved here.
-* `RoughCounts` is a named `Prop` for the rough-number counts (Lemma 2.2 with the Mertens
-  constant): `Σ_j |I_j|′ |𝒦_j| ≤ (1 + C₁λ) B₀ + O(λ m/(η³ L²))`. Lemma 2.2 is only sketched on paper.
-* `H4 η`: for all large `m` and every block `I_j ⊂ [m^η, (1+λ)√m]`, `λ = η/(4C₁)`,
-  `H4Block m I_j M_j η`, i.e. `Σ_{c∈G} δ_j(c)⁴ ≤ (η/2)⁴ ρ⁴ |I_j|′⁴ |𝒦_j|`.
-  **H4 is stronger than EOS** (it yields `N(a) ≥ 0.4 μ` for every unit `a`) and is **not known to
-  follow from GRH**; it isolates the gap and does not shrink it. GRH is not a hypothesis.
-
-The proof would be: `lemmaC'_of_H4Block` reduces `a ∈ P·P` to
-`S(A_a, z) − 1 − (1 + η/2) ρ Σ_j |I_j|′|𝒦_j| > 0`; `TypeISifted` bounds `S(A_a, z)` from below,
-`RoughCounts` bounds `Σ_j |I_j|′|𝒦_j|` above by `≈ B₀`, and Mertens plus `π(m) ∼ m/log m` give
-`ρ(Φ_m(m, z) − (1+η)B₀) ≥ (1 − e^{−γ} − o(1)) ρ m / log m > 1`; then `coveredBy_of_certificate`.
+The gap theorem is proved, with no `sorry`, in `EOS/GapH4.lean` as `EOS.eos_of_H4`:
+`TypeISifted → RoughCounts → (∃ η₀ κ > 0, ∀ η ≤ η₀, ∀ λ ≤ κη, H4 η λ → Conjecture)`.
+`TypeISifted` and `RoughCounts` are cited **unconditional** theorems (Fouvry–Shparlinski Type I plus the fundamental
+lemma; sieve upper bound and Buchstab/Mertens rough-number asymptotics). `H4` is the per-block fourth-moment bound
+`H4Block` over the block system tiling `[m^η, √m)`. **H4 is stronger than EOS and is not known to follow from GRH**;
+GRH is not a hypothesis. See `notes/routes/E-buchstab-H4.md` for the paper proof.
 -/
 
 open scoped BigOperators
