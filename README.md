@@ -32,7 +32,8 @@ Every theorem below is proved with **no `sorry`**. Each depends only on Lean's s
 
 Notes on the hypotheses and the last theorem:
 - The GRH hypotheses are standard explicit consequences of GRH [Dav00, ch. 20; LLS15; BS26, Lemma 2.5]. Deriving them from GRH stated literally (zeros of
-  L-functions) is in progress.
+  L-functions, `EOS.GRH` in `EOS/EOS/GRH.lean`, with `GRH → RiemannHypothesis` proved) is in progress; see
+  `notes/grh-blueprint.md`.
 - `eos_of_H4` does not use GRH. H4 is a fourth-moment hypothesis over residue classes. It is **stronger than the
   conjecture and not known to follow from GRH**: it isolates the gap rather than closing it.
 - `TypeIHalf` is likewise an open hypothesis beyond GRH; the theorem using it is a conditional reduction.

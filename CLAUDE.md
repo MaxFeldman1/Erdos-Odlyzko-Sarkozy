@@ -9,9 +9,15 @@
   If a build output shows Mathlib files being *compiled* (not replayed), kill it immediately.
 
 ## Mathematical conventions
-- Analytic input: in the approach phase we assume standard *consequences* of GRH (see `EOS.GRHBounds` in
-  `EOS/EOS/Statement.lean`). Any new analytic hypothesis must be a named `def ... : Prop` with a citation
-  showing it follows from GRH. Deriving these from a literal GRH statement is deferred.
+- Analytic input: the GRH-conditional theorems assume standard *consequences* of GRH (`EOS.GRHBounds`,
+  `EOS.GRHSmoothBound`). Any new analytic hypothesis must be a named `def ... : Prop` with a citation showing it
+  follows from GRH.
+- Literal GRH (decided with the user on 2026-11-23): `EOS.GRH` in `EOS/EOS/GRH.lean` is GRH stated via zeros of
+  `DirichletCharacter.LFunction`. The goal is `GRH → GRHSmoothBound` following `notes/grh-blueprint.md` (Landau-lemma
+  route, no Hadamard). `GRHBounds` is dropped from the GRH chain; log⁴ follows from log² by monotonicity.
+- Vendored code: files from PrimeNumberTheoremAnd (Apache-2.0) may be vendored into `EOS/EOS/Vendor/PNT/`. Keep the
+  original copyright and attribution header with the upstream commit, add a note of local modifications, and keep
+  the Apache-2.0 licence text in `EOS/EOS/Vendor/PNT/LICENSE`. Do not add Lake dependencies or change the Mathlib pin.
 - Deliverables (decided with the user on 2026-11-23):
   1. GRH-conditional approximations to EOS (`coveredBy_of_grhBounds`, `coveredBy_log_sq`, `coveredByAsym_m_log_cube`,
      `coveredBy_three_primes`), with GRH entering only through named GRH-consequence hypotheses.
