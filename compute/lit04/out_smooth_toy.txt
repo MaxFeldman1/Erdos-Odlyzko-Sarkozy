@@ -1,0 +1,6 @@
+10007 B 100 |M|/m 0.2904 (logm)^-0.086=0.8260 sum r^2/(m log m)=0.566 D4 min/mean 0.421 max/mean 2.068 std/mean 0.2204 quot min/mean 0.217 MM min/exp 0.686 |U|/(m-1) 0.6083
+   quotient argmin residue 10006 (m-res=1) Dq(-1)/mean 0.217 D4(-1)/mean 1.045 D4(1)/mean 1.126 6/pi^2=0.6079 second-smallest quot/mean 0.280 frac of a with Dq<0.5mean 0.0013
+100003 B 316 |M|/m 0.2664 (logm)^-0.086=0.8103 sum r^2/(m log m)=0.566 D4 min/mean 0.641 max/mean 1.869 std/mean 0.1249 quot min/mean 0.217 MM min/exp 0.852 |U|/(m-1) 0.6081
+   quotient argmin residue 100002 (m-res=1) Dq(-1)/mean 0.217 D4(-1)/mean 1.000 D4(1)/mean 0.980 6/pi^2=0.6079 second-smallest quot/mean 0.286 frac of a with Dq<0.5mean 0.0001
+1000003 B 1000 |M|/m 0.2481 (logm)^-0.086=0.7977 sum r^2/(m log m)=0.572 D4 min/mean 0.797 max/mean 1.578 std/mean 0.0666 quot min/mean 0.217 MM min/exp 0.945 |U|/(m-1) 0.6084
+   quotient argmin residue 1000002 (m-res=1) Dq(-1)/mean 0.217 D4(-1)/mean 0.986 D4(1)/mean 1.083 6/pi^2=0.6079 second-smallest quot/mean 0.285 frac of a with Dq<0.5mean 0.0000
