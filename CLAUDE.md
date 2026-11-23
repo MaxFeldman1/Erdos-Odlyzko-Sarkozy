@@ -20,6 +20,10 @@
      named `Prop`s for cited *unconditional* theorems. `H4` is the single beyond-GRH hypothesis isolating the gap.
      Do not add GRH as an unused hypothesis. Every docstring must say plainly that H4 is stronger than EOS and not
      known to follow from GRH.
+  3. Other conditional reductions may use an *open* beyond-GRH hypothesis (currently `H4` and
+     `SumTwoSquares.TypeIHalf`) only if that hypothesis is a single named `Prop` whose docstring says plainly that it is
+     open, not implied by GRH, and that the theorem is a conditional reduction. Such hypotheses are exempt from the
+     "citation showing it follows from GRH" rule above.
   - `EOS.eos_of_grhBounds` in Statement.lean stays as the (sorry'd) statement of the open problem.
 - In notes, mark every claim as proved / sketched / heuristic / [UNVERIFIED].
 - Do not run git. The orchestrator commits.

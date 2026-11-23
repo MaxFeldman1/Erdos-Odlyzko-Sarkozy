@@ -5,3 +5,4 @@ import EOS.LogSquare
 import EOS.Buchstab
 import EOS.ThreePrimes
 import EOS.GapH4
+import EOS.SumTwoSquares
