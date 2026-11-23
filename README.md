@@ -9,6 +9,8 @@ Hypothesis (GRH) for Dirichlet L-functions. GRH was recently announced as proved
 conditional. The work has four parts: a literature review, several research routes, numerics, and a Lean 4 / Mathlib
 formalization.
 
+**Write-up:** [`WRITEUP.md`](WRITEUP.md) is the full, paper-style report.
+
 **Bottom line.** The full conjecture remains open, even under GRH. The obstruction is isolated precisely (see
 *The Parseval wall* below), several barriers are identified, and the strongest rigorous GRH results are formalized in
 Lean with no `sorry`.
