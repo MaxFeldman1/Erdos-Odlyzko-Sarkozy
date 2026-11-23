@@ -11,6 +11,8 @@ project. See `../README.md` and `../CLAUDE.md`.
 | `EOS/ThreePrimes.lean` | `coveredBy_three_primes`: a ≡ pqs, p, q ≤ m, s ≪ log² m (log log m)² |
 | `EOS/Buchstab.lean` | unconditional Buchstab identity `lemmaC` and finite certificate `lemmaC'` |
 | `EOS/GapH4.lean` | `eos_of_H4`: `TypeISifted → RoughCounts → H4 η λ → Conjecture` (no GRH; H4 is the open gap) |
+| `EOS/Estermann.lean` | `estermann_long_log` (no hypotheses), `estermann_of_typeISifted` |
+| `EOS/SumTwoSquares.lean` | `sumTwoSq_of_typeIHalf` (conditional on the open `TypeIHalf`) |
 
 All main theorems depend only on `propext`, `Classical.choice` and `Quot.sound`. The hypotheses are audited in
 `../notes/lean-referee.md`.

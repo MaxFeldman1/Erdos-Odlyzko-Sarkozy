@@ -6,3 +6,4 @@ import EOS.Buchstab
 import EOS.ThreePrimes
 import EOS.GapH4
 import EOS.SumTwoSquares
+import EOS.Estermann

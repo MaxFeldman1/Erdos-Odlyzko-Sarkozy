@@ -25,6 +25,9 @@ Every theorem below is proved with **no `sorry`**. Each depends only on Lean's s
 | `coveredByAsym_m_log_cube` | `GRHSmoothBound` | a ≡ pq, with **p ≤ m** and q ≤ K m log³ m |
 | `coveredBy_three_primes` | `GRHSmoothBound` | a ≡ pqs, with p, q ≤ m and s ≪ log² m (log log m)² |
 | `Buchstab.lemmaC`, `lemmaC'` | none | exact Buchstab identity and finite certificate |
+| `estermann_long_log` | none | a ≡ p·s, with p ≤ m prime and s ≤ 56 m log m squarefree |
+| `estermann_of_typeISifted` | cited unconditional Type I input | a ≡ p·s, with p ≤ m, s < m squarefree (known: Yau 2019) |
+| `SumTwoSquares.sumTwoSq_of_typeIHalf` | **TypeIHalf** (open: Type I level 1/2) | m prime: a ≡ p·(x² + y²), with p ≤ m and x² + y² < m |
 | `eos_of_H4` | cited unconditional inputs + **H4** | the full conjecture |
 
 Notes on the hypotheses and the last theorem:
@@ -32,6 +35,7 @@ Notes on the hypotheses and the last theorem:
   L-functions) is in progress.
 - `eos_of_H4` does not use GRH. H4 is a fourth-moment hypothesis over residue classes. It is **stronger than the
   conjecture and not known to follow from GRH**: it isolates the gap rather than closing it.
+- `TypeIHalf` is likewise an open hypothesis beyond GRH; the theorem using it is a conditional reduction.
 - The open target `eos_of_grhBounds` in `EOS/Statement.lean` is the only `sorry`.
 
 Build (Mathlib comes from the cache; never build Mathlib from source):
