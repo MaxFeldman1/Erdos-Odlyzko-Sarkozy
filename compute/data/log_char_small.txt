@@ -1,0 +1,5 @@
+2405 primes up to 19999999: 7.2 s
+
+real	0m7.296s
+user	1m50.989s
+sys	0m2.388s

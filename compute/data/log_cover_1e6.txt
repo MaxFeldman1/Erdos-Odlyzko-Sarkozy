@@ -1,0 +1,2 @@
+m in [2,1000000]: 586.0 s, 136 fail records
+bin/eos_cover 2 1000000 data/cover_1e6.csv data/fails_1e6.csv  8276.14s user 32.32s system 1416% cpu 9:46.48 total

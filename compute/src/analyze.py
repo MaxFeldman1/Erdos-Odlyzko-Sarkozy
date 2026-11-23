@@ -12,7 +12,7 @@ cov = pd.read_csv(sys.argv[1] if len(sys.argv) > 1 else "data/cover_1e6.csv")
 fails = pd.read_csv(sys.argv[2] if len(sys.argv) > 2 else "data/fails_1e6.csv")
 full = pd.read_csv("data/full_range.csv")
 samp = pd.read_csv("data/full_sample.csv")
-ch = pd.read_csv("data/char_primes.csv")
+ch = pd.concat([pd.read_csv("data/char_small.csv")] + ([pd.read_csv("data/char_big.csv")] if os.path.exists("data/char_big.csv") else []), ignore_index=True)
 
 # ---------------- Task 1 ----------------
 say("=== Task 1: coverage, m in [2, %d] ===" % cov.m.max())
@@ -27,8 +27,8 @@ for m in bad_m[-12:]:
     say("  m=%d bad a: %s" % (m, " ".join(map(str, fa[fa.m == m].a))))
 for m in dist_bad[-6:]:
     say("  distinct-variant m=%d bad a (base-OK ones): %s" % (m, " ".join(map(str, fd[fd.m == m].a))))
-pr_fail = [m for m in bad_m if cov.set_index("m").loc[m, "pi_m"] == m - 1]
-say("of failing m, primes:", len(pr_fail))
+pr_fail = [m for m in bad_m if all(m % d for d in range(2, int(m ** .5) + 1))]
+say("of failing m, primes:", len(pr_fail), "; composite:", [m for m in bad_m if m not in pr_fail])
 
 # ---------------- Task 3b: theta / z ----------------
 c = cov[cov.m >= 1000].copy()
@@ -210,7 +210,43 @@ a.set_xscale("log"); a.set_xlabel("m"); a.set_ylabel("(E - pi^4/phi) / (2 pi^2)"
 a.legend(fontsize=7, markerscale=4)
 a = ax[1]
 a.scatter(ch.m, ch.maxS_over_sqrtpi, s=1.5, c="#2a6fdb", label="max_{chi != chi0} |S(chi)| / sqrt(pi_m)")
-a.plot(mm, np.sqrt(np.log(mm)), "r-", label="sqrt(log m)  (Gaussian max)")
+a.plot(mm, np.sqrt((1 - 1 / np.log(mm)) * np.log(mm / 2)), "r-", label="Gaussian model: sqrt((1-delta) log(phi/2))")
 a.set_xscale("log"); a.set_xlabel("prime m"); a.set_title("Largest nontrivial character sum over primes"); a.legend(fontsize=7)
 plt.tight_layout(); plt.savefig("fig/eos_energy_chars.png", dpi=130)
 print("plots written")
+
+# ---------------- extra: coupon-collector normalisations and prime-only fits ----------------
+out = open("data/summary.txt", "a")
+LIM = 10 ** 6 + 10
+s_ = np.ones(LIM, bool); s_[:2] = False
+for i in range(2, int(LIM ** .5) + 1):
+    if s_[i]: s_[i * i::i] = False
+pic = np.cumsum(s_)
+say("\n=== Extra: random-model normalisations ===")
+yy = pd.concat([full[(full.y > 0) & (full.m >= 1000)], samp[samp.y > 0]])
+yy = yy.assign(cc=lambda d: (pic[d.y.values] ** 2 / 2) / (d.phi * np.log(d.phi)))
+for lo, hi in [(1e3, 1e4), (1e4, 1e5 + 1), (1e5, 1e6 + 1)]:
+    s = yy[(yy.m >= lo) & (yy.m < hi)]
+    say("y(m): m in [%g,%g): pi(y)^2/2 / (phi log phi): median %.3f, max %.3f  [coupon collector predicts ~1]" % (lo, hi, s.cc.median(), s.cc.max()))
+cc = cov[cov.m >= 1000].copy()
+cc["delta"] = cc.pi_m / cc.phi
+cc["K"] = pic[cc.z.values]
+cc["Kr"] = cc.K / (np.log(cc.phi) / -np.log1p(-cc.delta))
+for lo, hi in [(1e3, 1e4), (1e4, 1e5), (1e5, 1e6 + 1)]:
+    s = cc[(cc.m >= lo) & (cc.m < hi)]
+    say("z(m): m in [%g,%g): pi(z) / (log phi / -log(1-delta)): median %.3f, max %.3f  [geometric-trials model predicts ~1]" % (lo, hi, s.Kr.median(), s.Kr.max()))
+pr_ = pd.concat([full[(full.is_prime == 1) & (full.m >= 1000)][["m", "R"]], ch[ch.m > full.m.max()][["m", "R"]]])
+b_, a_ = np.polyfit(np.log(pr_.m), np.log(1 - pr_.R), 1)
+say("prime m only (1e3..1e8): fit 1-R ~ %.3f m^%.3f" % (np.exp(a_), b_))
+ex = pd.concat([full[(full.is_prime == 1) & (full.m >= 1000)][["m", "R", "Rr2", "zs2"]], ch[ch.m > full.m.max()][["m", "R", "Rr2", "zs2"]]])
+for lo, hi in [(1e3, 1e4), (1e4, 1e5), (1e5, 1e6), (1e6, 1e7), (1e7, 1e8)]:
+    s = ex[(ex.m >= lo) & (ex.m < hi)]
+    say("prime m in [%g,%g): median (1-R)/(1-R_rand) = %.3f" % (lo, hi, ((1 - s.R) / (1 - s.Rr2)).median()))
+s = full[full.m >= 402]
+say("min R over 402 <= m <= 1e5: %.4f at m=%d;  over m >= 1000: %.4f at m=%d; over m>=1e4: %.4f at m=%d" % (
+    s.R.min(), s.m[s.R.idxmin()], s[s.m >= 1000].R.min(), s[s.m >= 1000].m[s[s.m >= 1000].R.idxmin()],
+    s[s.m >= 1e4].R.min(), s[s.m >= 1e4].m[s[s.m >= 1e4].R.idxmin()]))
+# position of argmin a in [0,m): uniform?
+pos = (full[full.m >= 5000].argmin_a / full[full.m >= 5000].m)
+say("argmin a/m deciles (uniform = 0.1 each):", np.round(np.histogram(pos, bins=10, range=(0, 1))[0] / len(pos), 3).tolist())
+out.close()

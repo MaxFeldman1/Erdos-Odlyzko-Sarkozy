@@ -1,0 +1,5 @@
+446 moduli up to 997075: 61.0 s
+
+real	1m1.062s
+user	16m43.035s
+sys	0m4.836s

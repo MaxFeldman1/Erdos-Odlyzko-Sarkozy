@@ -1,0 +1,2 @@
+99998 moduli up to 100000: 262.9 s
+bin/eos_full range 3 100000 data/full_range.csv  2848.62s user 17.61s system 1090% cpu 4:22.86 total

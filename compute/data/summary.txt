@@ -1,0 +1,108 @@
+=== Task 1: coverage, m in [2, 1000000] ===
+failing m (p,q <= m): 48 values; largest 401
+  list: 2 3 4 5 6 7 9 10 11 13 15 17 19 23 25 27 29 31 33 35 37 41 43 47 53 55 57 59 61 67 69 71 73 83 89 91 97 101 103 121 127 137 169 173 179 191 397 401
+failing m for distinct p != q variant: 62 largest 431
+  m failing distinct but not base: 8 12 16 21 24 26 49 51 77 93 133 149 193 431
+  m=97 bad a: 56 78
+  m=101 bad a: 37 66 79
+  m=103 bad a: 54
+  m=121 bad a: 16
+  m=127 bad a: 84 97
+  m=137 bad a: 83
+  m=169 bad a: 42
+  m=173 bad a: 90
+  m=179 bad a: 107 151
+  m=191 bad a: 19
+  m=397 bad a: 308
+  m=401 bad a: 385
+  distinct-variant m=179 bad a (base-OK ones): 
+  distinct-variant m=191 bad a (base-OK ones): 
+  distinct-variant m=193 bad a (base-OK ones): 23
+  distinct-variant m=397 bad a (base-OK ones): 
+  distinct-variant m=401 bad a (base-OK ones): 
+  distinct-variant m=431 bad a (base-OK ones): 169
+of failing m, primes: 33 ; composite: [np.int64(4), np.int64(6), np.int64(9), np.int64(10), np.int64(15), np.int64(25), np.int64(27), np.int64(33), np.int64(35), np.int64(55), np.int64(57), np.int64(69), np.int64(91), np.int64(121), np.int64(169)]
+
+=== Task 3: one small prime (p <= z, q <= m) ===
+m in [1000,10000): max z=641 at m=9419 (a=639), max theta=0.8537, mean theta=0.5754, max z/log^2 m=7.951, mean z/log^2 m=2.118
+m in [10000,100000): max z=1049 at m=58469 (a=7955), max theta=0.6841, mean theta=0.5094, max z/log^2 m=8.707, mean z/log^2 m=2.392
+m in [100000,1e+06): max z=1669 at m=770131 (a=409975), max theta=0.6057, mean theta=0.4587, max z/log^2 m=9.879, mean z/log^2 m=2.684
+largest theta for m>1000: 0.8537 at m=1061; for m>1e5: 0.6057 at m=121337
+fit block-max z ~ 3.341 (log m)^2.39 ; block-median z ~ 0.491 (log m)^2.59
+
+=== Task 2: R(m) ===
+first m with R>0 forever (in full range): 402
+m in [500,1000): min R=0.1090 at m=557 (prime=1, phi/m=0.998, a=300), median R=0.5862, median R_rand=0.4992, median zscore/sqrt(2 log phi)=0.787
+m in [1000,2000): min R=0.1359 at m=1007 (prime=0, phi/m=0.929, a=61), median R=0.6391, median R_rand=0.5694, median zscore/sqrt(2 log phi)=0.792
+m in [2000,5000): min R=0.3328 at m=2131 (prime=1, phi/m=1.000, a=797), median R=0.7010, median R_rand=0.6362, median zscore/sqrt(2 log phi)=0.801
+m in [5000,10000): min R=0.4830 at m=5107 (prime=1, phi/m=1.000, a=562), median R=0.7551, median R_rand=0.7077, median zscore/sqrt(2 log phi)=0.813
+m in [10000,20000): min R=0.5724 at m=10057 (prime=0, phi/m=0.980, a=6040), median R=0.7973, median R_rand=0.7593, median zscore/sqrt(2 log phi)=0.823
+m in [20000,50000): min R=0.6227 at m=22927 (prime=0, phi/m=0.986, a=15024), median R=0.8406, median R_rand=0.8110, median zscore/sqrt(2 log phi)=0.834
+m in [50000,100001): min R=0.7204 at m=53093 (prime=1, phi/m=1.000, a=13260), median R=0.8750, median R_rand=0.8543, median zscore/sqrt(2 log phi)=0.844
+prime m via FFT:
+  m in [10000,20000): n=1033, min R=0.5820, median R=0.6873, median R_rand=0.6170, median zs=0.809, max zs=1.001
+  m in [100000,200000): n=13, min R=0.8173, median R=0.8433, median R_rand=0.8247, median zs=0.849, max zs=1.033
+  m in [1e+06,2e+06): n=12, min R=0.9267, median R=0.9323, median R_rand=0.9219, median zs=0.870, max zs=0.908
+  m in [1e+07,2e+07): n=13, min R=0.9684, median R=0.9718, median R_rand=0.9697, median zs=0.906, max zs=0.949
+  m in [5e+07,1.01e+08): n=13, min R=0.9826, median R=0.9852, median R_rand=0.9835, median zs=0.934, max zs=0.986
+type comparison (m in [5000, max]), residual R - R_rand mean / zscore ratio mean:
+  other        n= 80400  mean R=0.8448  mean R_rand=0.8159  mean(R-R_rand)=+0.0289  mean zs=0.846
+  phi/m<0.3    n=  5612  mean R=0.9238  mean R_rand=0.9107  mean(R-R_rand)=+0.0131  mean zs=0.854
+  prime        n=  8923  mean R=0.7662  mean R_rand=0.7176  mean(R-R_rand)=+0.0486  mean zs=0.831
+  prime power  n=    66  mean R=0.7506  mean R_rand=0.6969  mean(R-R_rand)=+0.0537  mean zs=0.828
+argmin class types (m >= 5000):
+  fraction argmin is a square: 0.203 (fraction of squares in G averaged: 0.213)
+  fraction argmin = 1: 0.0001, = -1: 0.0000, <= 100: 0.0036
+  mean N(1)/lambda=0.9997, N(-1)/lambda=0.9990, mean over squares=1.0008, nonsquares=0.9999, min over a<=100 =0.9085
+  mean min over squares=0.8587, min over nonsquares=0.8446
+  m even: mean N(1)/lam=1.0004 N(-1)/lam=0.9992 mean sq=1.0009 nonsq=0.9999
+  m odd: mean N(1)/lam=0.9990 N(-1)/lam=0.9988 mean sq=1.0006 nonsq=0.9998
+  prime m (FFT, m>=1e4): mean N(1)/lam=0.9996  N(-1)/lam=1.0022  frac argmin square=0.472  frac argmin<=100=0.0041
+fit 1-R ~ 3.089 m^-0.286 (all m >= 1000)
+fit (1-R) sqrt(lambda) ~ 0.373 (log m)^1.026   [random model: 2(1-delta) sqrt(log phi), i.e. exponent 0.5]
+
+=== Task 3: y(m) ===
+m in [1000,10000): max y/m=0.7708 (m=1021), median y/m=0.2537, median y/sqrt(m)=17.36, median y/(sqrt(m) log m)=2.035, max y/(sqrt m log m)=4.049
+m in [10000,20000): max y/m=0.3849 (m=11741), median y/m=0.1719, median y/sqrt(m)=20.64, median y/(sqrt(m) log m)=2.149, max y/(sqrt m log m)=4.611
+m in [20000,50000): max y/m=0.2910 (m=20803), median y/m=0.1283, median y/sqrt(m)=23.37, median y/(sqrt(m) log m)=2.237, max y/(sqrt m log m)=4.704
+m in [50000,100001): max y/m=0.2039 (m=50959), median y/m=0.0964, median y/sqrt(m)=25.87, median y/(sqrt(m) log m)=2.305, max y/(sqrt m log m)=4.526
+sample to 1e6: median y/m=0.0333 for m>5e5; max y/m=0.0678
+fit y ~ 5.074 m^0.647
+fit y ~ 0.467 sqrt(m) (log m)^1.86  [with m^(1/2) fixed: coefficient c, extra sqrt-exponent -0.082]
+m > 100 with y/m > 0.5: 640; largest such m: 3403
+  largest m with y(m)/m > 0.90: 433
+  largest m with y(m)/m > 0.75: 1021
+  largest m with y(m)/m > 0.50: 3403
+  largest m with y(m)/m > 0.25: 35071
+
+=== Task 4: energy and character sums ===
+m in [1000,5000) composite: E/(pi^4/phi+2pi^2) mean=0.98999;  X=(E-pi^4/phi)/(2pi^2) mean=0.4547 [min 0.0869, max 0.6669];  X/(1-delta)^2 mean=0.9098
+m in [1000,5000) prime    : E/(pi^4/phi+2pi^2) mean=0.98663;  X=(E-pi^4/phi)/(2pi^2) mean=0.6289 [min 0.5776, max 0.6692];  X/(1-delta)^2 mean=0.8620
+m in [5000,20000) composite: E/(pi^4/phi+2pi^2) mean=0.99694;  X=(E-pi^4/phi)/(2pi^2) mean=0.5156 [min 0.1418, max 0.7010];  X/(1-delta)^2 mean=0.8974
+m in [5000,20000) prime    : E/(pi^4/phi+2pi^2) mean=0.99596;  X=(E-pi^4/phi)/(2pi^2) mean=0.6755 [min 0.6356, max 0.7024];  X/(1-delta)^2 mean=0.8740
+m in [20000,100001) composite: E/(pi^4/phi+2pi^2) mean=0.99917;  X=(E-pi^4/phi)/(2pi^2) mean=0.5722 [min 0.1784, max 0.7373];  X/(1-delta)^2 mean=0.9018
+m in [20000,100001) prime    : E/(pi^4/phi+2pi^2) mean=0.99892;  X=(E-pi^4/phi)/(2pi^2) mean=0.7174 [min 0.6830, max 0.7387];  X/(1-delta)^2 mean=0.8897
+primes [5,1000) n=166: X mean=0.5659, X/(1-delta)^2 mean=0.9195; max|S|/sqrt(pi): median 1.867 max 2.466; max|S|^2/(pi log phi): median 0.581; max|S|/(sqrt(m)log m): max 0.5557; #|S|^2>10pi total 0; max is quadratic chi: 0.03
+primes [1000,20000) n=2094: X mean=0.6644, X/(1-delta)^2 mean=0.8711; max|S|/sqrt(pi): median 2.261 max 3.003; max|S|^2/(pi log phi): median 0.561; max|S|/(sqrt(m)log m): max 0.1382; #|S|^2>10pi total 0; max is quadratic chi: 0.01
+primes [20000,200000) n=49: X mean=0.7185, X/(1-delta)^2 mean=0.8900; max|S|/sqrt(pi): median 2.469 max 2.788; max|S|^2/(pi log phi): median 0.565; max|S|/(sqrt(m)log m): max 0.0838; #|S|^2>10pi total 0; max is quadratic chi: 0.00
+primes [200000,2e+06) n=47: X mean=0.7667, X/(1-delta)^2 mean=0.9103; max|S|/sqrt(pi): median 2.780 max 3.052; max|S|^2/(pi log phi): median 0.578; max|S|/(sqrt(m)log m): max 0.0686; #|S|^2>10pi total 0; max is quadratic chi: 0.00
+primes [2e+06,2e+07) n=49: X mean=0.8018, X/(1-delta)^2 mean=0.9252; max|S|/sqrt(pi): median 3.067 max 3.285; max|S|^2/(pi log phi): median 0.596; max|S|/(sqrt(m)log m): max 0.0577; #|S|^2>10pi total 16; max is quadratic chi: 0.00
+primes [2e+07,1.01e+08) n=35: X mean=0.8251, X/(1-delta)^2 mean=0.9350; max|S|/sqrt(pi): median 3.286 max 3.499; max|S|^2/(pi log phi): median 0.604; max|S|/(sqrt(m)log m): max 0.0523; #|S|^2>10pi total 268; max is quadratic chi: 0.00
+mean |S(quadratic)|/sqrt(pi), primes>1e4: 0.804; mean signed S_quad/sqrt(pi): -0.339
+FFT rounding: max err 1.69e-09, any sumN mismatch: False
+
+=== Extra: random-model normalisations ===
+y(m): m in [1000,10000): pi(y)^2/2 / (phi log phi): median 0.925, max 2.118  [coupon collector predicts ~1]
+y(m): m in [10000,100001): pi(y)^2/2 / (phi log phi): median 0.946, max 1.954  [coupon collector predicts ~1]
+y(m): m in [100000,1e+06): pi(y)^2/2 / (phi log phi): median 0.966, max 1.457  [coupon collector predicts ~1]
+z(m): m in [1000,10000): pi(z) / (log phi / -log(1-delta)): median 1.120, max 2.685  [geometric-trials model predicts ~1]
+z(m): m in [10000,100000): pi(z) / (log phi / -log(1-delta)): median 1.046, max 3.303  [geometric-trials model predicts ~1]
+z(m): m in [100000,1e+06): pi(z) / (log phi / -log(1-delta)): median 1.020, max 2.538  [geometric-trials model predicts ~1]
+prime m only (1e3..1e8): fit 1-R ~ 6.313 m^-0.314
+prime m in [1000,10000): median (1-R)/(1-R_rand) = 0.778
+prime m in [10000,100000): median (1-R)/(1-R_rand) = 0.827
+prime m in [100000,1e+06): median (1-R)/(1-R_rand) = 0.867
+prime m in [1e+06,1e+07): median (1-R)/(1-R_rand) = 0.873
+prime m in [1e+07,1e+08): median (1-R)/(1-R_rand) = 0.911
+min R over 402 <= m <= 1e5: 0.0640 at m=431;  over m >= 1000: 0.1359 at m=1007; over m>=1e4: 0.5724 at m=10057
+argmin a/m deciles (uniform = 0.1 each): [0.109, 0.108, 0.106, 0.103, 0.101, 0.099, 0.097, 0.095, 0.092, 0.09]

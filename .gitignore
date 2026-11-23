@@ -1,0 +1,4 @@
+compute/bin/
+compute/data/cover_1e6.csv
+compute/data/full_range.csv
+.DS_Store

@@ -1,0 +1,6 @@
+35 primes up to 89821393: 51.0 s
+
+real	0m51.434s
+user	3m2.626s
+sys	0m39.847s
+ALLDONE
