@@ -1,0 +1,14 @@
+n=17 f=0x32e79 |P|=  7709 lam=   453.41 zeros=    0 minN/lam= 0.737 Rrand= 0.697 depth= 0.87 max|S|/sqrt|P|= 2.89 max|S|/(n 2^(n/2))=0.0412 energy-excess/random=0.950
+n=17 f=0x39881 |P|=  7709 lam=   453.41 zeros=    0 minN/lam= 0.745 Rrand= 0.697 depth= 0.84 max|S|/sqrt|P|= 2.88 max|S|/(n 2^(n/2))=0.0411 energy-excess/random=0.953
+n=18 f=0x57c8b |P|= 14531 lam=   805.48 zeros=    0 minN/lam= 0.792 Rrand= 0.765 depth= 0.88 max|S|/sqrt|P|= 2.95 max|S|/(n 2^(n/2))=0.0386 energy-excess/random=0.960
+n=18 f=0x502ff |P|= 14531 lam=   805.48 zeros=    0 minN/lam= 0.797 Rrand= 0.765 depth= 0.86 max|S|/sqrt|P|= 2.94 max|S|/(n 2^(n/2))=0.0384 energy-excess/random=0.959
+n=19 f=0xcce7b |P|= 27593 lam=  1452.21 zeros=    0 minN/lam= 0.836 Rrand= 0.820 depth= 0.91 max|S|/sqrt|P|= 3.13 max|S|/(n 2^(n/2))=0.0377 energy-excess/random=0.960
+n=19 f=0xac6d3 |P|= 27593 lam=  1452.21 zeros=    0 minN/lam= 0.833 Rrand= 0.820 depth= 0.92 max|S|/sqrt|P|= 3.16 max|S|/(n 2^(n/2))=0.0381 energy-excess/random=0.961
+n=20 f=0x17a847 |P|= 52376 lam=  2616.17 zeros=    0 minN/lam= 0.880 Rrand= 0.862 depth= 0.87 max|S|/sqrt|P|= 3.30 max|S|/(n 2^(n/2))=0.0369 energy-excess/random=0.963
+n=20 f=0x106577 |P|= 52376 lam=  2616.17 zeros=    0 minN/lam= 0.879 Rrand= 0.862 depth= 0.87 max|S|/sqrt|P|= 3.13 max|S|/(n 2^(n/2))=0.0350 energy-excess/random=0.964
+n=21 f=0x211c95 |P|= 99857 lam=  4754.75 zeros=    0 minN/lam= 0.903 Rrand= 0.895 depth= 0.92 max|S|/sqrt|P|= 3.43 max|S|/(n 2^(n/2))=0.0357 energy-excess/random=0.966
+n=21 f=0x2948c3 |P|= 99857 lam=  4754.75 zeros=    0 minN/lam= 0.904 Rrand= 0.895 depth= 0.91 max|S|/sqrt|P|= 3.43 max|S|/(n 2^(n/2))=0.0356 energy-excess/random=0.966
+n=22 f=0x78e055 |P|=190556 lam=  8657.36 zeros=    0 minN/lam= 0.926 Rrand= 0.920 depth= 0.92 max|S|/sqrt|P|= 3.36 max|S|/(n 2^(n/2))=0.0326 energy-excess/random=0.968
+n=22 f=0x4ec8d1 |P|=190556 lam=  8657.36 zeros=    0 minN/lam= 0.929 Rrand= 0.920 depth= 0.88 max|S|/sqrt|P|= 3.42 max|S|/(n 2^(n/2))=0.0331 energy-excess/random=0.968
+n=23 f=0xc510b1 |P|=364721 lam= 15857.39 zeros=    0 minN/lam= 0.943 Rrand= 0.939 depth= 0.95 max|S|/sqrt|P|= 3.50 max|S|/(n 2^(n/2))=0.0317 energy-excess/random=0.970
+n=23 f=0x835d4f |P|=364721 lam= 15857.39 zeros=    0 minN/lam= 0.947 Rrand= 0.939 depth= 0.88 max|S|/sqrt|P|= 3.44 max|S|/(n 2^(n/2))=0.0312 energy-excess/random=0.970

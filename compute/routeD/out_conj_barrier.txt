@@ -1,0 +1,44 @@
+m=10007  |P|=1229  lambda=150.95  m-2 prime: False
+  product : min N/lam = 0.636   N(-1)/lam = 1.007   #zeros = 0
+  quotient: Nm(-1) = 0   Nm(1) = 1229 (=|P|)   #zeros = 1   min over a!=+-1 of Nm/lam = 0.583
+  mean|S|^2: even(non-principal) = 927.28  odd = 1229.00  diff/(2|P|^2/phi) = 0.9994  rel.bias (mo-me)/|P| = 0.2455  (2/log m = 0.2171)
+  identity check: sum chi(-1)|S|^2 = -1510441.0  vs phi*Nm(-1)-|P|^2 = -1510441
+  product analogue: sum_(chi!=chi0) chi(-1) Re S^2 / |P|^2 = +0.0069   (quotient: -1.0000; EOS at a=-1 fails iff this is -1)
+  a = u/v : Nm/lam | N/lam   2/1: 0.58 | 1.10   -2/1: 0.68 | 0.98   3/1: 0.81 | 0.97   -3/1: 0.83 | 0.97   1/2: 0.58 | 1.14   -1/2: 0.68 | 0.85   3/2: 1.30 | 0.90   -3/2: 0.59 | 0.97   5/1: 0.62 | 1.03   -5/1: 0.66 | 1.03   6/1: 0.99 | 1.01   -6/1: 1.11 | 1.07
+  spread: std(N/lam) = 0.0949   std(Nm/lam, a != 1) = 0.0625   random-set prediction sqrt(2/lam)*(1-delta) = 0.1010
+  range X=(1+0.02)m: #{p+q=2m, p,q<=X} = 6
+  range X=(1+0.1)m: #{p+q=2m, p,q<=X} = 34
+
+m=100003  |P|=9592  lambda=920.05  m-2 prime: False
+  product : min N/lam = 0.835   N(-1)/lam = 1.035   #zeros = 0
+  quotient: Nm(-1) = 0   Nm(1) = 9592 (=|P|)   #zeros = 1   min over a!=+-1 of Nm/lam = 0.513
+  mean|S|^2: even(non-principal) = 7752.06  odd = 9592.00  diff/(2|P|^2/phi) = 0.9999  rel.bias (mo-me)/|P| = 0.1918  (2/log m = 0.1737)
+  identity check: sum chi(-1)|S|^2 = -92006464.0  vs phi*Nm(-1)-|P|^2 = -92006464
+  product analogue: sum_(chi!=chi0) chi(-1) Re S^2 / |P|^2 = +0.0347   (quotient: -1.0000; EOS at a=-1 fails iff this is -1)
+  a = u/v : Nm/lam | N/lam   2/1: 0.63 | 0.96   -2/1: 0.70 | 1.03   3/1: 0.79 | 0.97   -3/1: 0.84 | 1.01   1/2: 0.63 | 1.02   -1/2: 0.70 | 0.97   3/2: 1.27 | 1.04   -3/2: 0.51 | 1.08   5/1: 0.69 | 0.92   -5/1: 0.69 | 1.02   6/1: 1.00 | 0.96   -6/1: 1.08 | 1.05
+  spread: std(N/lam) = 0.0399   std(Nm/lam, a != 1) = 0.0266   random-set prediction sqrt(2/lam)*(1-delta) = 0.0422
+  range X=(1+0.02)m: #{p+q=2m, p,q<=X} = 48
+  range X=(1+0.1)m: #{p+q=2m, p,q<=X} = 206
+
+m=1000003  |P|=78498  lambda=6161.92  m-2 prime: False
+  product : min N/lam = 0.921   N(-1)/lam = 1.004   #zeros = 0
+  quotient: Nm(-1) = 0   Nm(1) = 78498 (=|P|)   #zeros = 1   min over a!=+-1 of Nm/lam = 0.513
+  mean|S|^2: even(non-principal) = 66174.28  odd = 78498.00  diff/(2|P|^2/phi) = 1.0000  rel.bias (mo-me)/|P| = 0.1570  (2/log m = 0.1448)
+  identity check: sum chi(-1)|S|^2 = -6161936004.0  vs phi*Nm(-1)-|P|^2 = -6161936004
+  product analogue: sum_(chi!=chi0) chi(-1) Re S^2 / |P|^2 = +0.0036   (quotient: -1.0000; EOS at a=-1 fails iff this is -1)
+  a = u/v : Nm/lam | N/lam   2/1: 0.62 | 1.02   -2/1: 0.70 | 0.98   3/1: 0.83 | 1.01   -3/1: 0.85 | 1.01   1/2: 0.62 | 1.00   -1/2: 0.70 | 1.01   3/2: 1.29 | 1.01   -3/2: 0.51 | 0.97   5/1: 0.67 | 0.99   -5/1: 0.68 | 1.01   6/1: 0.98 | 1.00   -6/1: 1.07 | 0.99
+  spread: std(N/lam) = 0.0159   std(Nm/lam, a != 1) = 0.0107   random-set prediction sqrt(2/lam)*(1-delta) = 0.0166
+  range X=(1+0.02)m: #{p+q=2m, p,q<=X} = 300
+  range X=(1+0.1)m: #{p+q=2m, p,q<=X} = 1370
+
+m=3000017  |P|=216816  lambda=15669.64  m-2 prime: False
+  product : min N/lam = 0.951   N(-1)/lam = 0.992   #zeros = 0
+  quotient: Nm(-1) = 0   Nm(1) = 216816 (=|P|)   #zeros = 1   min over a!=+-1 of Nm/lam = 0.505
+  mean|S|^2: even(non-principal) = 185476.84  odd = 216816.00  diff/(2|P|^2/phi) = 1.0000  rel.bias (mo-me)/|P| = 0.1445  (2/log m = 0.1341)
+  identity check: sum chi(-1)|S|^2 = -47009177856.0  vs phi*Nm(-1)-|P|^2 = -47009177856
+  product analogue: sum_(chi!=chi0) chi(-1) Re S^2 / |P|^2 = -0.0085   (quotient: -1.0000; EOS at a=-1 fails iff this is -1)
+  a = u/v : Nm/lam | N/lam   2/1: 0.62 | 1.00   -2/1: 0.69 | 1.00   3/1: 0.83 | 0.99   -3/1: 0.85 | 1.01   1/2: 0.62 | 0.99   -1/2: 0.69 | 1.00   3/2: 1.30 | 1.01   -3/2: 0.50 | 1.01   5/1: 0.67 | 0.99   -5/1: 0.69 | 1.00   6/1: 1.00 | 1.00   -6/1: 1.05 | 0.99
+  spread: std(N/lam) = 0.0101   std(Nm/lam, a != 1) = 0.0068   random-set prediction sqrt(2/lam)*(1-delta) = 0.0105
+  range X=(1+0.02)m: #{p+q=2m, p,q<=X} = 754
+  range X=(1+0.1)m: #{p+q=2m, p,q<=X} = 3556
+

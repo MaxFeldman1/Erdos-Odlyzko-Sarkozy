@@ -1,0 +1,33 @@
+n= 6 f=0x73 |P|=     8 lam=     1.02 zeros=   33 minN/lam= 0.000 Rrand=-2.526 depth= 0.28 max|S|/sqrt|P|= 1.90 max|S|/(n 2^(n/2))=0.1119 energy-excess/random=0.933
+n= 6 f=0x43 |P|=     8 lam=     1.02 zeros=   33 minN/lam= 0.000 Rrand=-2.526 depth= 0.28 max|S|/sqrt|P|= 1.90 max|S|/(n 2^(n/2))=0.1119 energy-excess/random=0.933
+n= 6 f=0x61 |P|=     8 lam=     1.02 zeros=   33 minN/lam= 0.000 Rrand=-2.526 depth= 0.28 max|S|/sqrt|P|= 1.90 max|S|/(n 2^(n/2))=0.1119 energy-excess/random=0.933
+n= 7 f=0x89 |P|=    17 lam=     2.28 zeros=   29 minN/lam= 0.000 Rrand=-1.527 depth= 0.40 max|S|/sqrt|P|= 1.58 max|S|/(n 2^(n/2))=0.0820 energy-excess/random=0.820
+n= 7 f=0xef |P|=    17 lam=     2.28 zeros=   29 minN/lam= 0.000 Rrand=-1.527 depth= 0.40 max|S|/sqrt|P|= 1.58 max|S|/(n 2^(n/2))=0.0820 energy-excess/random=0.820
+n= 7 f=0xb9 |P|=    17 lam=     2.28 zeros=   29 minN/lam= 0.000 Rrand=-1.527 depth= 0.40 max|S|/sqrt|P|= 1.76 max|S|/(n 2^(n/2))=0.0916 energy-excess/random=0.921
+n= 8 f=0x1a9 |P|=    29 lam=     3.30 zeros=   30 minN/lam= 0.000 Rrand=-1.298 depth= 0.44 max|S|/sqrt|P|= 1.85 max|S|/(n 2^(n/2))=0.0778 energy-excess/random=0.850
+n= 8 f=0x18d |P|=    29 lam=     3.30 zeros=   34 minN/lam= 0.000 Rrand=-1.298 depth= 0.44 max|S|/sqrt|P|= 1.79 max|S|/(n 2^(n/2))=0.0752 energy-excess/random=0.823
+n= 8 f=0x165 |P|=    29 lam=     3.30 zeros=   34 minN/lam= 0.000 Rrand=-1.298 depth= 0.44 max|S|/sqrt|P|= 1.79 max|S|/(n 2^(n/2))=0.0752 energy-excess/random=0.823
+n= 9 f=0x3cd |P|=    55 lam=     5.92 zeros=   12 minN/lam= 0.000 Rrand=-0.832 depth= 0.55 max|S|/sqrt|P|= 1.95 max|S|/(n 2^(n/2))=0.0710 energy-excess/random=0.878
+n= 9 f=0x259 |P|=    55 lam=     5.92 zeros=   13 minN/lam= 0.000 Rrand=-0.832 depth= 0.55 max|S|/sqrt|P|= 2.12 max|S|/(n 2^(n/2))=0.0771 energy-excess/random=0.931
+n= 9 f=0x295 |P|=    55 lam=     5.92 zeros=   16 minN/lam= 0.000 Rrand=-0.832 depth= 0.55 max|S|/sqrt|P|= 2.08 max|S|/(n 2^(n/2))=0.0758 energy-excess/random=0.905
+n=10 f=0x42d |P|=    98 lam=     9.39 zeros=    7 minN/lam= 0.000 Rrand=-0.554 depth= 0.64 max|S|/sqrt|P|= 2.01 max|S|/(n 2^(n/2))=0.0621 energy-excess/random=0.865
+n=10 f=0x755 |P|=    98 lam=     9.39 zeros=    5 minN/lam= 0.000 Rrand=-0.554 depth= 0.64 max|S|/sqrt|P|= 2.24 max|S|/(n 2^(n/2))=0.0694 energy-excess/random=0.913
+n=10 f=0x637 |P|=    98 lam=     9.39 zeros=    4 minN/lam= 0.000 Rrand=-0.554 depth= 0.64 max|S|/sqrt|P|= 1.96 max|S|/(n 2^(n/2))=0.0607 energy-excess/random=0.886
+n=11 f=0xe7d |P|=   185 lam=    16.72 zeros=    0 minN/lam= 0.060 Rrand=-0.228 depth= 0.77 max|S|/sqrt|P|= 2.30 max|S|/(n 2^(n/2))=0.0629 energy-excess/random=0.923
+n=11 f=0xb93 |P|=   185 lam=    16.72 zeros=    0 minN/lam= 0.239 Rrand=-0.228 depth= 0.62 max|S|/sqrt|P|= 2.21 max|S|/(n 2^(n/2))=0.0605 energy-excess/random=0.910
+n=11 f=0x88d |P|=   185 lam=    16.72 zeros=    0 minN/lam= 0.120 Rrand=-0.228 depth= 0.72 max|S|/sqrt|P|= 2.36 max|S|/(n 2^(n/2))=0.0645 energy-excess/random=0.896
+n=12 f=0x1467 |P|=   334 lam=    27.24 zeros=    0 minN/lam= 0.294 Rrand=-0.015 depth= 0.70 max|S|/sqrt|P|= 2.35 max|S|/(n 2^(n/2))=0.0560 energy-excess/random=0.935
+n=12 f=0x1e15 |P|=   334 lam=    27.24 zeros=    0 minN/lam= 0.147 Rrand=-0.015 depth= 0.84 max|S|/sqrt|P|= 2.40 max|S|/(n 2^(n/2))=0.0571 energy-excess/random=0.906
+n=12 f=0x1745 |P|=   334 lam=    27.24 zeros=    0 minN/lam= 0.294 Rrand=-0.015 depth= 0.70 max|S|/sqrt|P|= 2.50 max|S|/(n 2^(n/2))=0.0594 energy-excess/random=0.930
+n=13 f=0x274f |P|=   629 lam=    48.30 zeros=    0 minN/lam= 0.414 Rrand= 0.203 depth= 0.73 max|S|/sqrt|P|= 2.57 max|S|/(n 2^(n/2))=0.0548 energy-excess/random=0.942
+n=13 f=0x356d |P|=   629 lam=    48.30 zeros=    0 minN/lam= 0.414 Rrand= 0.203 depth= 0.73 max|S|/sqrt|P|= 2.55 max|S|/(n 2^(n/2))=0.0544 energy-excess/random=0.915
+n=13 f=0x3b77 |P|=   629 lam=    48.30 zeros=    0 minN/lam= 0.455 Rrand= 0.203 depth= 0.68 max|S|/sqrt|P|= 2.40 max|S|/(n 2^(n/2))=0.0511 energy-excess/random=0.909
+n=14 f=0x4285 |P|=  1160 lam=    82.13 zeros=    0 minN/lam= 0.511 Rrand= 0.361 depth= 0.76 max|S|/sqrt|P|= 2.72 max|S|/(n 2^(n/2))=0.0517 energy-excess/random=0.950
+n=14 f=0x5ee7 |P|=  1160 lam=    82.13 zeros=    0 minN/lam= 0.511 Rrand= 0.361 depth= 0.76 max|S|/sqrt|P|= 2.62 max|S|/(n 2^(n/2))=0.0498 energy-excess/random=0.940
+n=14 f=0x70a9 |P|=  1160 lam=    82.13 zeros=    0 minN/lam= 0.475 Rrand= 0.361 depth= 0.82 max|S|/sqrt|P|= 2.74 max|S|/(n 2^(n/2))=0.0520 energy-excess/random=0.944
+n=15 f=0xf097 |P|=  2181 lam=   145.17 zeros=    0 minN/lam= 0.592 Rrand= 0.500 depth= 0.82 max|S|/sqrt|P|= 2.60 max|S|/(n 2^(n/2))=0.0447 energy-excess/random=0.941
+n=15 f=0xfc1f |P|=  2181 lam=   145.17 zeros=    0 minN/lam= 0.592 Rrand= 0.500 depth= 0.82 max|S|/sqrt|P|= 2.61 max|S|/(n 2^(n/2))=0.0448 energy-excess/random=0.944
+n=15 f=0xa2a9 |P|=  2181 lam=   145.17 zeros=    0 minN/lam= 0.592 Rrand= 0.500 depth= 0.82 max|S|/sqrt|P|= 2.74 max|S|/(n 2^(n/2))=0.0471 energy-excess/random=0.946
+n=16 f=0x146fd |P|=  4079 lam=   253.88 zeros=    0 minN/lam= 0.677 Rrand= 0.608 depth= 0.82 max|S|/sqrt|P|= 2.79 max|S|/(n 2^(n/2))=0.0435 energy-excess/random=0.951
+n=16 f=0x1eb21 |P|=  4079 lam=   253.88 zeros=    0 minN/lam= 0.662 Rrand= 0.608 depth= 0.86 max|S|/sqrt|P|= 2.96 max|S|/(n 2^(n/2))=0.0462 energy-excess/random=0.955
+n=16 f=0x1b8dd |P|=  4079 lam=   253.88 zeros=    0 minN/lam= 0.670 Rrand= 0.608 depth= 0.84 max|S|/sqrt|P|= 2.86 max|S|/(n 2^(n/2))=0.0445 energy-excess/random=0.947

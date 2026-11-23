@@ -1,0 +1,7 @@
+r=101 m=10201: identity N(a)=sum of fibres on 20 random a: OK; |U_1|=14, single-fibre count: mean=1.73, min=0, #(c,e) with no solution=1493 of 10100 (Poisson guess 1783.3)
+r=211 m=44521: identity N(a)=sum of fibres on 20 random a: OK; |U_1|=21, single-fibre count: mean=2.19, min=0, #(c,e) with no solution=4062 of 44310 (Poisson guess 4947.1)
+r=307 m=94249: identity N(a)=sum of fibres on 20 random a: skipped; |U_1|=31, single-fibre count: mean=3.00, min=0, #(c,e) with no solution=3689 of 93942 (Poisson guess 4682.0)
+r=503 m=253009: identity N(a)=sum of fibres on 20 random a: skipped; |U_1|=49, single-fibre count: mean=4.32, min=0, #(c,e) with no solution=2414 of 252506 (Poisson guess 3345.8)
+r=1009 m=1018081: identity N(a)=sum of fibres on 20 random a: skipped; |U_1|=80, single-fibre count: mean=6.28, min=0, #(c,e) with no solution=1685 of 1017072 (Poisson guess 1907.1)
+r=2003 m=4012009: identity N(a)=sum of fibres on 20 random a: skipped; |U_1|=144, single-fibre count: mean=10.20, min=0, #(c,e) with no solution=574 of 4010006 (Poisson guess 149.6)
+r=4001 m=16008001: identity N(a)=sum of fibres on 20 random a: skipped; |U_1|=265, single-fibre count: mean=17.08, min=0, #(c,e) with no solution=488 of 16004000 (Poisson guess 0.6)
