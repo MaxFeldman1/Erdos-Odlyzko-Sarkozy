@@ -529,8 +529,8 @@ theorem lemmaC' {m : ℕ} [NeZero m] (hm : 2 ≤ m) {a : ZMod m} (ha : IsUnit a)
 
 /-- The per-block inequality of hypothesis H4(η) (`notes/brainstorm/r1-analytic.md` §2.3):
 `Σ_{c∈G} δ_I(c)⁴ ≤ (η/2)⁴ ρ⁴ |I|′⁴ |𝒦_M|`, with `δ_I(c) = π_I(c) − ρ|I|′`.
-This is only the block inequality; the full hypothesis `H4 η` also fixes the block system
-(`λ = η/(4C₁)`, blocks in `[m^η, (1+λ)√m]`) and quantifies over all large `m`.
+This is only the block inequality; the full hypothesis `EOS.H4 η λ` (in `GapH4.lean`) fixes the
+block system (blocks tiling `[m^η, √m)`, see `numBlocks`, `blockPt`) and quantifies over all large `m`.
 H4 is stronger than EOS and is not known to follow from GRH. -/
 def H4Block (m : ℕ) [NeZero m] (I : Finset ℕ) (M : ℕ) (η : ℝ) : Prop :=
   ∑ c ∈ univ.filter IsUnit, delta m I (rho m * primesIn m I) c ^ 4 ≤
@@ -547,7 +547,7 @@ lemma rpow_three_quarters_mul (K t : ℝ) (hK : 0 ≤ K) (ht : 0 ≤ t) :
 /-- **Corollary H4 without its asymptotic layer.** If every block `I_j = [M_j, M_{j+1})` satisfies
 the H4(η) block inequality (`η ≥ 0`), then
 `S(A_a, z) − 1 − (1 + η/2) ρ Σ_{j<J} |I_j|′ |𝒦_j| > 0` implies `a ≡ p q` with primes `p, q ≤ m`.
-(The remaining steps of Cor H4, Lemma 2.2 and Lemma 2.1, are asymptotic and not formalized.) -/
+(The asymptotic steps of Cor H4, Lemma 2.2 and Lemma 2.1, are formalized in `GapH4.lean`.) -/
 theorem lemmaC'_of_H4Block {m : ℕ} [NeZero m] (hm : 2 ≤ m) {a : ZMod m} (ha : IsUnit a)
     {z : ℕ} (hz : z * z ≤ m) (M : ℕ → ℕ) (J : ℕ) (h0 : M 0 ≤ z) (hJ : m ≤ M J * M J)
     {η : ℝ} (hη : 0 ≤ η) (hH : ∀ j < J, H4Block m (Ico (M j) (M (j + 1))) (M j) η)

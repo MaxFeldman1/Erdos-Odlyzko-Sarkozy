@@ -1,13 +1,18 @@
-# EOS
+# EOS: Lean formalization
 
-## GitHub configuration
+Lean 4 + Mathlib (from the cache only; never build Mathlib from source) for the Erdős–Odlyzko–Sárközy conjecture
+project. See `../README.md` and `../CLAUDE.md`.
 
-To set up your new GitHub repository, follow these steps:
+| File | Main results |
+|---|---|
+| `EOS/Statement.lean` | `CoveredBy`, `Conjecture`, `GRHBounds`; the open target `eos_of_grhBounds` (the only `sorry`) |
+| `EOS/LogFour.lean` | `coveredBy_of_grhBounds`: p, q ≤ K m log⁴ m under `GRHBounds` |
+| `EOS/LogSquare.lean` | `GRHSmoothBound`; `coveredBy_log_sq` (p, q ≤ K m log² m); `coveredByAsym_m_log_cube` (p ≤ m, q ≤ K m log³ m) |
+| `EOS/ThreePrimes.lean` | `coveredBy_three_primes`: a ≡ pqs, p, q ≤ m, s ≪ log² m (log log m)² |
+| `EOS/Buchstab.lean` | unconditional Buchstab identity `lemmaC` and finite certificate `lemmaC'` |
+| `EOS/GapH4.lean` | `eos_of_H4`: `TypeISifted → RoughCounts → H4 η λ → Conjecture` (no GRH; H4 is the open gap) |
 
-* Under your repository name, click **Settings**.
-* In the **Actions** section of the sidebar, click "General".
-* Check the box **Allow GitHub Actions to create and approve pull requests**.
-* Click the **Pages** section of the settings sidebar.
-* In the **Source** dropdown menu, select "GitHub Actions".
+All main theorems depend only on `propext`, `Classical.choice` and `Quot.sound`. The hypotheses are audited in
+`../notes/lean-referee.md`.
 
-After following the steps above, you can remove this section from the README file.
+Check: `lake exe cache get && lake build`.

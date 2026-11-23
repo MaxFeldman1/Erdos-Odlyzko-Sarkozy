@@ -165,7 +165,12 @@ where `ι_j = #{p ∈ I_j prime, p ∤ m}`, `π_j(c) = #{p ∈ I_j prime, p ∤ 
 to follow from GRH**, and **GRH is not a hypothesis** of `eos_of_H4`. H4 isolates the gap of the
 Buchstab route; it does not close it. It must be stated for this specific block system: for
 blocks containing only a few primes it is false. Its analogue for `P⁻¹` in place of `P` fails for
-every large `m` (Proposition Q′ of the note). -/
+every large `m` (Proposition Q′ of the note).
+
+*Degenerate parameters.* Outside `0 < η < 1/2`, `0 < λ`, the block system is empty (`numBlocks = 0`) and
+`H4 η λ` holds trivially (e.g. `H4 η 0`, `H4 (1/2) λ`). This is harmless: `eos_of_H4` only uses H4 for
+`0 < η ≤ η₀ ≤ 1/4` and `0 < λ ≤ κη`, where `numBlocks ≥ 1` and the blocks tile `[⌈m^η⌉, ⌈√m⌉)`
+(see `notes/lean-referee.md`, caveat 1). -/
 def H4 (η lam : ℝ) : Prop :=
   ∃ m₀ : ℕ, ∀ m : ℕ, m₀ ≤ m → ∀ [NeZero m], ∀ j < numBlocks m η lam,
     H4Block m (Ico (blockPt m η lam j) (blockPt m η lam (j + 1))) (blockPt m η lam j) η
