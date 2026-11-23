@@ -12,7 +12,14 @@
 - Analytic input: in the approach phase we assume standard *consequences* of GRH (see `EOS.GRHBounds` in
   `EOS/EOS/Statement.lean`). Any new analytic hypothesis must be a named `def ... : Prop` with a citation
   showing it follows from GRH. Deriving these from a literal GRH statement is deferred.
-- Target: `EOS.eos_of_grhBounds`. The fallback is the strongest provable weaker statement (e.g. `CoveredBy m (m * (log m)^C)`),
-  with the gap isolated as a single named hypothesis.
+- Deliverables (decided with the user on 2026-11-23):
+  1. GRH-conditional approximations to EOS (`coveredBy_of_grhBounds`, `coveredBy_log_sq`, `coveredByAsym_m_log_cube`,
+     `coveredBy_three_primes`), with GRH entering only through named GRH-consequence hypotheses.
+  2. The gap theorem, in the shape `eos_of_H4 (hT : TypeISifted) (hH : H4 η) : Conjecture` (Buchstab route; see
+     notes/brainstorm/r3-synthesis.md §5). It does **not** mention GRH. `TypeISifted` and any other asymptotic input are
+     named `Prop`s for cited *unconditional* theorems. `H4` is the single beyond-GRH hypothesis isolating the gap.
+     Do not add GRH as an unused hypothesis. Every docstring must say plainly that H4 is stronger than EOS and not
+     known to follow from GRH.
+  - `EOS.eos_of_grhBounds` in Statement.lean stays as the (sorry'd) statement of the open problem.
 - In notes, mark every claim as proved / sketched / heuristic / [UNVERIFIED].
 - Do not run git. The orchestrator commits.
