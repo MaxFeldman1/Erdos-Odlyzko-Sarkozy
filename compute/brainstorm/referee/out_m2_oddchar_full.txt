@@ -1,0 +1,16 @@
+p=101: all a: mean=0.0099 var=0.9902 m4=2.977 m6=14.35 m8=95.0 range=[-3.871,3.574]
+      a not in F_p: var=0.9784 m4=2.947 m6=13.75 m8=85.4 range=[-3.337,3.000];  a in F_p^*: range=[-3.871,3.574] mean=0.010
+      raw moments E t^k, k=1..6 (a not in F_p): 0.010 0.978 0.020 2.821 0.112 12.880
+      hist: [(np.float64(-3.34), np.int64(24)), (np.float64(-2.81), np.int64(92)), (np.float64(-2.28), np.int64(276)), (np.float64(-1.75), np.int64(712)), (np.float64(-1.22), np.int64(1234)), (np.float64(-0.7), np.int64(1934)), (np.float64(-0.17), np.int64(2272)), (np.float64(0.36), np.int64(1630)), (np.float64(0.89), np.int64(1104)), (np.float64(1.42), np.int64(594)), (np.float64(1.94), np.int64(174)), (np.float64(2.47), np.int64(54))]
+p=211: all a: mean=0.0047 var=0.9953 m4=2.987 m6=14.75 m8=102.1 range=[-3.787,3.844]
+      a not in F_p: var=0.9908 m4=2.981 m6=14.66 m8=100.9 range=[-3.787,3.844];  a in F_p^*: range=[-3.417,3.844] mean=0.005
+      raw moments E t^k, k=1..6 (a not in F_p): 0.005 0.991 0.016 2.926 0.126 14.262
+      hist: [(np.float64(-3.79), np.int64(48)), (np.float64(-3.15), np.int64(200)), (np.float64(-2.52), np.int64(874)), (np.float64(-1.88), np.int64(3924)), (np.float64(-1.24), np.int64(6220)), (np.float64(-0.61), np.int64(11768)), (np.float64(0.03), np.int64(10202)), (np.float64(0.66), np.int64(6132)), (np.float64(1.3), np.int64(3994)), (np.float64(1.94), np.int64(634)), (np.float64(2.57), np.int64(282)), (np.float64(3.21), np.int64(32))]
+p=401: all a: mean=0.0025 var=0.9975 m4=3.038 m6=15.41 m8=108.6 range=[-3.908,3.594]
+      a not in F_p: var=0.9948 m4=3.035 m6=15.37 m8=108.2 range=[-3.908,3.594];  a in F_p^*: range=[-3.369,3.594] mean=0.002
+      raw moments E t^k, k=1..6 (a not in F_p): 0.002 0.995 0.008 3.004 0.070 15.135
+      hist: [(np.float64(-3.91), np.int64(102)), (np.float64(-3.28), np.int64(746)), (np.float64(-2.66), np.int64(1820)), (np.float64(-2.03), np.int64(10866)), (np.float64(-1.41), np.int64(20538)), (np.float64(-0.78), np.int64(32046)), (np.float64(-0.16), np.int64(45120)), (np.float64(0.47), np.int64(25998)), (np.float64(1.09), np.int64(16390)), (np.float64(1.72), np.int64(5202)), (np.float64(2.34), np.int64(1120)), (np.float64(2.97), np.int64(452))]
+p=1009: all a: mean=0.0010 var=0.9990 m4=3.001 m6=15.00 m8=104.8 range=[-3.836,3.965]
+      a not in F_p: var=0.9980 m4=3.000 m6=14.98 m8=104.6 range=[-3.836,3.769];  a in F_p^*: range=[-3.664,3.965] mean=0.001
+      raw moments E t^k, k=1..6 (a not in F_p): 0.001 0.998 0.003 2.988 0.021 14.895
+      hist: [(np.float64(-3.84), np.int64(944)), (np.float64(-3.2), np.int64(4648)), (np.float64(-2.57), np.int64(15352)), (np.float64(-1.94), np.int64(85528)), (np.float64(-1.3), np.int64(145474)), (np.float64(-0.67), np.int64(231862)), (np.float64(-0.03), np.int64(261154)), (np.float64(0.6), np.int64(153348)), (np.float64(1.23), np.int64(92820)), (np.float64(1.87), np.int64(18922)), (np.float64(2.5), np.int64(5652)), (np.float64(3.14), np.int64(1368))]

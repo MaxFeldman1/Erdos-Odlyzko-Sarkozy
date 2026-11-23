@@ -1,0 +1,2 @@
+range [5,260]: (m,a) pairs 20594; F2 excess in 3074 (last (260, 197, 1)); Q excess in 5168 (last (260, 259, 2)); violations 0
+number of (m,a) with corank_2 = d_a (no non-character symmetry): 2553 largest: [(259, 230), (259, 235), (259, 251), (259, 255), (259, 258)]

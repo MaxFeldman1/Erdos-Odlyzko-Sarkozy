@@ -1,0 +1,5 @@
+m=2 r= 3 Q=    8 |K*|=      63 |P|=     27 lam=    11.571 zeros=     0 minN/lam= 0.519 var(e)=  1.347 kurt= 2.768 max|e|=  2.786 max/gauss=0.834 max/sqrtQ= 0.985 top5=[2.79, 2.71, 2.71, 2.71, 1.79]
+m=2 r= 5 Q=   32 |K*|=    1023 |P|=    495 lam=   239.516 zeros=     0 minN/lam= 0.927 var(e)=  1.093 kurt= 2.180 max|e|=  2.190 max/gauss=0.563 max/sqrtQ= 0.387 top5=[2.19, 2.19, 2.19, 2.19, 2.19]
+m=2 r= 7 Q=  128 |K*|=   16383 |P|=   8127 lam=  4031.504 zeros=     0 minN/lam= 0.969 var(e)=  1.023 kurt= 2.075 max|e|=  3.922 max/gauss=0.880 max/sqrtQ= 0.347 top5=[3.92, 2.27, 2.27, 2.27, 2.27]
+m=2 r= 9 Q=  512 |K*|=  262143 |P|= 130815 lam= 65279.501 zeros=     0 minN/lam= 0.996 var(e)=  1.006 kurt= 2.012 max|e|=  2.121 max/gauss=0.423 max/sqrtQ= 0.094 top5=[2.12, 2.12, 2.12, 2.12, 2.12]
+m=2 r=11 Q= 2048 |K*|= 4194303 |P|=2096127 lam=1047551.500 zeros=     0 minN/lam= 0.999 var(e)=  1.001 kurt= 2.003 max|e|=  2.706 max/gauss=0.490 max/sqrtQ= 0.060 top5=[2.71, 2.08, 2.08, 2.08, 2.08]

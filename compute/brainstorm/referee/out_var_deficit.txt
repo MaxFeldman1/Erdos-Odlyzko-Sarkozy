@@ -1,0 +1,20 @@
+m=1000003 M=1000 lam=1     #u= 135 Lambda var/pred=0.9559  deficit/(lam*rho)=0.562
+m=1000003 M=1000 lam=1     #u= 135 count  var/pred=0.9556  deficit/(lam*rho)=0.565
+m=1000003 M=1000 lam=0.5   #u=  71 Lambda var/pred=0.9709  deficit/(lam*rho)=0.742
+m=1000003 M=1000 lam=0.5   #u=  71 count  var/pred=0.9708  deficit/(lam*rho)=0.743
+m=1000003 M=1000 lam=0.25  #u=  36 Lambda var/pred=0.9838  deficit/(lam*rho)=0.824
+m=1000003 M=1000 lam=0.25  #u=  36 count  var/pred=0.9838  deficit/(lam*rho)=0.824
+m=1000003 M=1000 lam=0.1   #u=  16 Lambda var/pred=0.9926  deficit/(lam*rho)=0.938
+m=1000003 M=1000 lam=0.1   #u=  16 count  var/pred=0.9926  deficit/(lam*rho)=0.940
+m=1000003 M=300 lam=1     #u=  47 Lambda var/pred=0.9568  deficit/(lam*rho)=0.550
+m=1000003 M=300 lam=1     #u=  47 count  var/pred=0.9566  deficit/(lam*rho)=0.553
+m=1000003 M=300 lam=0.5   #u=  25 Lambda var/pred=0.9731  deficit/(lam*rho)=0.686
+m=1000003 M=300 lam=0.5   #u=  25 count  var/pred=0.9730  deficit/(lam*rho)=0.688
+m=1000003 M=3000 lam=1     #u= 353 Lambda var/pred=0.9562  deficit/(lam*rho)=0.558
+m=1000003 M=3000 lam=1     #u= 353 count  var/pred=0.9559  deficit/(lam*rho)=0.561
+m=1000003 M=3000 lam=0.25  #u=  92 Lambda var/pred=0.9821  deficit/(lam*rho)=0.913
+m=1000003 M=3000 lam=0.25  #u=  92 count  var/pred=0.9821  deficit/(lam*rho)=0.913
+m=1000003 M=30000 lam=1     #u=2812 Lambda var/pred=0.9810  deficit/(lam*rho)=0.242
+m=1000003 M=30000 lam=1     #u=2812 count  var/pred=0.9809  deficit/(lam*rho)=0.243
+m=1000003 M=30000 lam=0.25  #u= 723 Lambda var/pred=0.9901  deficit/(lam*rho)=0.503
+m=1000003 M=30000 lam=0.25  #u= 723 count  var/pred=0.9901  deficit/(lam*rho)=0.504

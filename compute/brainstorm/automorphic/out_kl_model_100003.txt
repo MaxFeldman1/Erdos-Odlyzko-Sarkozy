@@ -1,0 +1,28 @@
+m=100003 |P|=9592 L=11.513 lambda=920.05 Var E=1349.25 (Var E/lambda=1.466)
+ R=  10: #major h=   139  cos(model,Phat on major)=0.9998  ||Phat#||^2 share=0.2702  residual share=0.7301  (log R/log m=0.2000)
+         Var shares: ##=0.0732  #b=0.4392  bb=0.5579   corr(E,E##)=0.3082  recon err=1.61e-12
+         min over a:  E/lam=-0.1653  E##/lam=-0.0528  Ebb/lam=-0.1276   kurt E##=2.98 kurt Ebb=2.98
+         Parseval bounds on sup|.|/lam:  ##: 2.547   bb: 6.881   (full: 10.426)
+ R=  40: #major h=  2449  cos(model,Phat on major)=0.9934  ||Phat#||^2 share=0.4119  residual share=0.5887  (log R/log m=0.3204)
+         Var shares: ##=0.1639  #b=0.5671  bb=0.4035   corr(E,E##)=0.4516  recon err=1.61e-12
+         min over a:  E/lam=-0.1653  E##/lam=-0.0650  Ebb/lam=-0.1167   kurt E##=2.99 kurt Ebb=3.01
+         Parseval bounds on sup|.|/lam:  ##: 3.883   bb: 5.549   (full: 10.426)
+ R= 100: #major h= 14755  cos(model,Phat on major)=0.9551  ||Phat#||^2 share=0.5008  residual share=0.5003  (log R/log m=0.4000)
+         Var shares: ##=0.2493  #b=0.6035  bb=0.3211   corr(E,E##)=0.5340  recon err=1.58e-12
+         min over a:  E/lam=-0.1653  E##/lam=-0.0876  Ebb/lam=-0.0975   kurt E##=2.99 kurt Ebb=2.99
+         Parseval bounds on sup|.|/lam:  ##: 4.720   bb: 4.715   (full: 10.426)
+         peaks: u/v   Pi/(m/L)^2   Pi#/(m/L)^2
+            -1/6   +1.5000  +1.5184
+             1/6   -1.2761  -1.2834
+            -1/30  -1.3544  -0.9208
+            -1/12  -1.1503  -1.0829
+             1/4   -0.7661  -0.8003
+            -1/4   +0.6486  +0.6954
+             1/3   -0.5866  -0.5796
+             1/1   -0.3354  -0.2681
+            -1/1   +0.3642  +0.2651
+             1/2   -0.0745  -0.0992
+             2/1   -0.1502  -0.1552
+             6/1   -0.0905  -0.0375
+            -6/1   +0.1195  +0.0399
+             1/5   -0.4731  -0.4875

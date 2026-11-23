@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/Users/maxfeldman/Desktop/maths/research/eos-conjecture/compute/brainstorm/geometer/tower_eos.py", line 97, in <module>
+    run(m, r)
+  File "/Users/maxfeldman/Desktop/maths/research/eos-conjecture/compute/brainstorm/geometer/tower_eos.py", line 85, in run
+    var = float((e ** 2).mean()); kurt = float((e ** 4).mean()) / var ** 2
+ZeroDivisionError: float division by zero
+m=3 r= 1 Q=    2 |K*|=       7 |P|=      1 lam=     0.143 zeros=     6 minN/lam= 0.000 var(e)=  1.240 kurt= 5.167 max|e|=  2.727 max/gauss=1.242 max/sqrtQ= 1.929 top5=[2.73, 0.45, 0.45, 0.45, 0.45]
+m=3 r= 2 Q=    4 |K*|=      63 |P|=     19 lam=     5.730 zeros=     0 minN/lam= 0.349 var(e)=  5.673 kurt= 2.255 max|e|=  4.804 max/gauss=0.701 max/sqrtQ= 2.402 top5=[4.8, 4.8, 4.2, 4.2, 4.2]
+m=3 r= 4 Q=   16 |K*|=    4095 |P|=   1359 lam=   451.009 zeros=     0 minN/lam= 0.896 var(e)=  5.982 kurt= 2.933 max|e|=  8.577 max/gauss=0.860 max/sqrtQ= 2.144 top5=[8.58, 8.58, 8.58, 8.58, 7.17]
+m=3 r= 5 Q=   32 |K*|=   32767 |P|=  10911 lam=  3633.226 zeros=     0 minN/lam= 0.948 var(e)=  5.990 kurt= 2.975 max|e|=  9.309 max/gauss=0.834 max/sqrtQ= 1.646 top5=[9.31, 9.31, 9.31, 9.31, 9.31]
+m=3 r= 7 Q=  128 |K*|= 2097151 |P|= 699007 lam=232987.890 zeros=     0 minN/lam= 0.991 var(e)=  5.996 kurt= 2.995 max|e|= 12.528 max/gauss=0.948 max/sqrtQ= 1.107 top5=[12.53, 11.3, 11.29, 11.29, 11.29]
+m=4 r= 1 Q=    2 |K*|=      15 |P|=      2 lam=     0.267 zeros=    12 minN/lam= 0.000 var(e)=  5.262 kurt= 5.957 max|e|=  6.933 max/gauss=1.299 max/sqrtQ= 4.903 top5=[6.93, 2.93, 2.93, 1.07, 1.07]
+m=4 r= 3 Q=    8 |K*|=    4095 |P|=   1007 lam=   247.631 zeros=     0 minN/lam= 0.775 var(e)= 14.427 kurt= 3.194 max|e|= 13.908 max/gauss=0.898 max/sqrtQ= 4.917 top5=[13.91, 13.91, 11.91, 11.66, 11.66]
+m=4 r= 5 Q=   32 |K*|= 1048575 |P|= 261887 lam= 65407.625 zeros=     0 minN/lam= 0.985 var(e)= 14.938 kurt= 3.006 max|e|= 15.990 max/gauss=0.786 max/sqrtQ= 2.827 top5=[15.99, 15.99, 15.99, 15.99, 15.99]
+m=5 r= 1 Q=    2 |K*|=      31 |P|=      5 lam=     0.806 zeros=    16 minN/lam= 0.000 var(e)= 15.649 kurt= 1.360 max|e|=  5.275 max/gauss=0.509 max/sqrtQ= 3.730 top5=[5.27, 5.27, 5.27, 5.27, 5.27]
+m=5 r= 2 Q=    4 |K*|=    1023 |P|=    203 lam=    40.283 zeros=     0 minN/lam= 0.596 var(e)= 27.245 kurt= 3.081 max|e|= 19.311 max/gauss=0.994 max/sqrtQ= 9.655 top5=[19.31, 19.31, 16.97, 16.97, 15.4]
+m=5 r= 3 Q=    8 |K*|=   32767 |P|=   6551 lam=  1309.720 zeros=     0 minN/lam= 0.877 var(e)= 27.896 kurt= 2.968 max|e|= 25.588 max/gauss=1.062 max/sqrtQ= 9.047 top5=[25.59, 22.33, 22.33, 22.33, 19.1]
+m=5 r= 4 Q=   16 |K*|= 1048575 |P|= 209711 lam= 41941.400 zeros=     0 minN/lam= 0.977 var(e)= 27.900 kurt= 3.006 max|e|= 24.526 max/gauss=0.882 max/sqrtQ= 6.132 top5=[24.53, 24.33, 24.33, 24.06, 23.86]
+m=7 r= 1 Q=    2 |K*|=     127 |P|=     17 lam=     2.276 zeros=    27 minN/lam= 0.000 var(e)= 54.849 kurt= 2.612 max|e|= 16.131 max/gauss=0.700 max/sqrtQ=11.406 top5=[16.13, 16.13, 16.13, 16.13, 16.13]
+m=7 r= 2 Q=    4 |K*|=   16383 |P|=   2339 lam=   333.939 zeros=     0 minN/lam= 0.773 var(e)= 66.160 kurt= 3.041 max|e|= 34.859 max/gauss=0.973 max/sqrtQ=17.430 top5=[34.86, 34.86, 34.48, 34.48, 29.12]
+m=7 r= 3 Q=    8 |K*|= 2097151 |P|= 299591 lam= 42798.429 zeros=     0 minN/lam= 0.971 var(e)= 65.754 kurt= 2.990 max|e|= 41.430 max/gauss=0.947 max/sqrtQ=14.648 top5=[41.43, 41.43, 41.43, 40.21, 40.21]

@@ -1,0 +1,5 @@
+     m  classes  exc2>0  max_exc2  excQ>0  min(comp2) mean(comp2) mean(pairs) comps_not_pairs(mean)  min(cor2-d)
+  5003      40       0        0       -          4       10.97        9.28           1.70            4
+ 10007      40       0        0       -         12       18.32       15.10           3.23           12
+ 20011      40       0        0       -         22       31.95       26.27           5.67           22
+ 30011      40       0        0       -         30       43.00       36.00           7.00           30
