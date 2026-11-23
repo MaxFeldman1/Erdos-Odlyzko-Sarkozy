@@ -1,0 +1,20 @@
+(F3) -zeta'/zeta(3/2) = 1.50523535578826791942204360304   -zeta'/zeta(2) = 0.56996099309453280639986436002
+(F4) psi(3/4) = -1.08586087978647216962688676282  psi(5/4) = -0.227453533376265408089530146097
+Lemma 1.1 constant: 1.5053 - log(pi)/2 + max(psi)/2 = 0.819143646175435128305564854314  ; (4/3)*c = 1.09219152823391350440741980575
+max of Re psi(z) - log|z| on grid (should be <= 0): -4.16666666640833333334910432928e-11
+ratio at 0: 1.77777777777777777777777777778  max: 1.77777777777777777777777777778  min: 0.9375 at u= 2.75  monotone decreasing on [0,1000): False
+sum over first 800 zeta zeros of 1/|rho(rho+1)| = 0.043458582308939402688048864422 (Lemma 1.1 claims an absolute constant)
+sum 1/(1+gamma^2) partial: 0.0434768655255491571215852297267  ; exact via (1.1) with q=1 modifications:  None
+x=1.0: psiC=0.0  explicit(400 zero pairs)=-0.00140435556477  |psiC-x/2|/sqrt(x)=0.5
+x=1.5: psiC=0.0  explicit(400 zero pairs)=-5.91847402907e-6  |psiC-x/2|/sqrt(x)=0.612372
+x=2.0: psiC=0.0  explicit(400 zero pairs)=0.000328121108889  |psiC-x/2|/sqrt(x)=0.707107
+x=10.5: psiC=3.5885885998  explicit(400 zero pairs)=3.58857577787  |psiC-x/2|/sqrt(x)=0.512723
+x=100.0: psiC=48.0498887668  explicit(400 zero pairs)=48.0495330844  |psiC-x/2|/sqrt(x)=0.195011
+x=1000.3: psiC=498.008215226  explicit(400 zero pairs)=498.006542092  |psiC-x/2|/sqrt(x)=0.067719
+mod 3: sum_rho 1/(1+gamma^2) [GRH, via (1.1)] = 0.1127197714  vs bound 0.5 log q + 0.82 = 1.3693061
+mod 4: sum_rho 1/(1+gamma^2) [GRH, via (1.1)] = 0.1542151512  vs bound 0.5 log q + 0.82 = 1.5131472
+mod 5 real: sum_rho 1/(1+gamma^2) [GRH, via (1.1)] = 0.1555043997  vs bound 0.5 log q + 0.82 = 1.624719
+mod 5 complex: sum_rho 1/(1+gamma^2) [GRH, via (1.1)] = 0.1999290572  vs bound 0.5 log q + 0.82 = 1.624719
+mod 8 even: sum_rho 1/(1+gamma^2) [GRH, via (1.1)] = 0.2322593373  vs bound 0.5 log q + 0.82 = 1.8597208
+mod 8 odd: sum_rho 1/(1+gamma^2) [GRH, via (1.1)] = 0.3068992201  vs bound 0.5 log q + 0.82 = 1.8597208
+mod 12: sum_rho 1/(1+gamma^2) [GRH, via (1.1)] = 0.3223710146  vs bound 0.5 log q + 0.82 = 2.0624533

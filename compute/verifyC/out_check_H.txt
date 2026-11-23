@@ -1,0 +1,27 @@
+# XMAX = 1000000
+# q  phi  worst_ratio  at_x  character  principal  | worst over integer x  at
+     1     1  1.056960  x=3.000000  triv   princ=True  | int: 1.056960 at 3  mp50=1.05696046559
+     2     1  0.664728  x=5.000000  chi0   princ=True  | int: 0.664728 at 5  mp50=0.664727689821
+     3     2  0.485582  x=5.000000  chi0   princ=True  | int: 0.485582 at 5  mp50=0.485581982085
+     4     2  0.443152  x=5.000000  chi0   princ=True  | int: 0.443152 at 5  mp50=0.443151793214
+     5     4  0.341436  x=7.000000  chi0   princ=True  | int: 0.341436 at 7  mp50=0.341436356902
+     7     6  0.277610  x=3.000000  chi0   princ=True  | int: 0.277610 at 3  mp50=0.277610174841
+     8     4  0.332364  x=5.000000  chi0   princ=True  | int: 0.332364 at 5  mp50=0.332363844911
+     9     6  0.301015  x=5.000000  chi0   princ=True  | int: 0.301015 at 5  mp50=0.301015297465
+    11    10  0.237017  x=3.000000  chi0   princ=True  | int: 0.237017 at 3  mp50=0.237016856852
+    12     4  0.371382  x=11.000000  chi0   princ=True  | int: 0.371382 at 11  mp50=0.371382166119
+    13    12  0.246114  x=49.000000  chi5   princ=False  | int: 0.246114 at 49  mp50=0.24611379804
+    15     8  0.318704  x=11.000000  chi0   princ=True  | int: 0.318704 at 11  mp50=0.31870426894
+    16     8  0.265891  x=5.000000  chi0   princ=True  | int: 0.265891 at 5  mp50=0.265891075929
+    24     8  0.304885  x=11.000000  chi0   princ=True  | int: 0.304885 at 11  mp50=0.304885360443
+    30     8  0.354481  x=13.000000  chi0   princ=True  | int: 0.354481 at 13  mp50=0.354481084088
+/Users/maxfeldman/Desktop/maths/research/eos-conjecture/compute/verifyC/check_H.py:128: RuntimeWarning: divide by zero encountered in matmul
+  assert np.allclose(M @ M.conj().T, phi * np.eye(phi), atol=1e-6)
+/Users/maxfeldman/Desktop/maths/research/eos-conjecture/compute/verifyC/check_H.py:128: RuntimeWarning: overflow encountered in matmul
+  assert np.allclose(M @ M.conj().T, phi * np.eye(phi), atol=1e-6)
+/Users/maxfeldman/Desktop/maths/research/eos-conjecture/compute/verifyC/check_H.py:128: RuntimeWarning: invalid value encountered in matmul
+  assert np.allclose(M @ M.conj().T, phi * np.eye(phi), atol=1e-6)
+    60    16  0.303158  x=13.000000  chi0   princ=True  | int: 0.303158 at 13  mp50=0.303158266797
+   101   100  0.332946  x=855199.000000  chi15  princ=False  | int: 0.332946 at 855199
+   210    48  0.283087  x=17.000000  chi0   princ=True  | int: 0.283087 at 17  mp50=0.283086827726
+  2310   480  0.331923  x=24413.000000  chi237 princ=False  | int: 0.331923 at 24413  mp50=0.331922840215

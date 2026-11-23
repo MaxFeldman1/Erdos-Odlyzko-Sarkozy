@@ -1,0 +1,35 @@
+m=2310 phi=480 L=7.745
+  X1=    2310.0 X2=    2310.0 all_checks=True  T1/X1=0.479 M1/(sqrtX1 L)=0.232 V2/(X2 logX2)=0.103 max|E|/(M1 sqrtV2)=0.098 proof_ratio=1.452 #R=0: 0  Pars-diag/diag(X2)=1.25e-15
+  X1=   17891.0 X2=    2310.0 all_checks=True  T1/X1=0.493 M1/(sqrtX1 L)=0.355 V2/(X2 logX2)=0.103 max|E|/(M1 sqrtV2)=0.056 proof_ratio=0.775 #R=0: 0  Pars-diag/diag(X2)=1.25e-15
+  X1=  138565.5 X2=    2310.0 all_checks=True  T1/X1=0.498 M1/(sqrtX1 L)=0.286 V2/(X2 logX2)=0.103 max|E|/(M1 sqrtV2)=0.097 proof_ratio=0.222 #R=0: 0  Pars-diag/diag(X2)=1.25e-15
+  X1= 1073190.2 X2=    2310.0 all_checks=True  T1/X1=0.499 M1/(sqrtX1 L)=0.283 V2/(X2 logX2)=0.103 max|E|/(M1 sqrtV2)=0.068 proof_ratio=0.079 #R=0: 0  Pars-diag/diag(X2)=1.25e-15
+  X1=  138565.5 X2=  138565.5 all_checks=True  T1/X1=0.498 M1/(sqrtX1 L)=0.286 V2/(X2 logX2)=0.077 max|E|/(M1 sqrtV2)=0.081 proof_ratio=0.029 #R=0: 0  Pars-diag/diag(X2)=2.08e+01
+  X1=  138565.5 X2=   17891.0 all_checks=True  T1/X1=0.498 M1/(sqrtX1 L)=0.286 V2/(X2 logX2)=0.098 max|E|/(M1 sqrtV2)=0.067 proof_ratio=0.085 #R=0: 0  Pars-diag/diag(X2)=2.83e+00
+m=3003 phi=1440 L=8.007
+  X1=    3003.0 X2=    3003.0 all_checks=True  T1/X1=0.482 M1/(sqrtX1 L)=0.316 V2/(X2 logX2)=0.188 max|E|/(M1 sqrtV2)=0.064 proof_ratio=6.406 #R=0: 0  Pars-diag/diag(X2)=-1.22e-15
+  X1=   24046.1 X2=    3003.0 all_checks=True  T1/X1=0.494 M1/(sqrtX1 L)=0.350 V2/(X2 logX2)=0.188 max|E|/(M1 sqrtV2)=0.036 proof_ratio=2.442 #R=0: 0  Pars-diag/diag(X2)=-1.22e-15
+  X1=  192546.1 X2=    3003.0 all_checks=True  T1/X1=0.498 M1/(sqrtX1 L)=0.371 V2/(X2 logX2)=0.188 max|E|/(M1 sqrtV2)=0.036 proof_ratio=0.910 #R=0: 0  Pars-diag/diag(X2)=-1.22e-15
+  X1= 1541787.6 X2=    3003.0 all_checks=True  T1/X1=0.499 M1/(sqrtX1 L)=0.324 V2/(X2 logX2)=0.188 max|E|/(M1 sqrtV2)=0.046 proof_ratio=0.280 #R=0: 0  Pars-diag/diag(X2)=-1.22e-15
+  X1=  192546.1 X2=  192546.1 all_checks=True  T1/X1=0.498 M1/(sqrtX1 L)=0.371 V2/(X2 logX2)=0.106 max|E|/(M1 sqrtV2)=0.052 proof_ratio=0.102 #R=0: 0  Pars-diag/diag(X2)=9.04e+00
+  X1=  192546.1 X2=   24046.1 all_checks=True  T1/X1=0.498 M1/(sqrtX1 L)=0.371 V2/(X2 logX2)=0.120 max|E|/(M1 sqrtV2)=0.033 proof_ratio=0.281 #R=0: 0  Pars-diag/diag(X2)=9.46e-01
+m=4096 phi=2048 L=8.318
+  X1=    4096.0 X2=    4096.0 all_checks=True  T1/X1=0.486 M1/(sqrtX1 L)=0.310 V2/(X2 logX2)=0.196 max|E|/(M1 sqrtV2)=0.053 proof_ratio=6.957 #R=0: 0  Pars-diag/diag(X2)=1.48e-15
+  X1=   34069.6 X2=    4096.0 all_checks=True  T1/X1=0.496 M1/(sqrtX1 L)=0.346 V2/(X2 logX2)=0.196 max|E|/(M1 sqrtV2)=0.037 proof_ratio=2.641 #R=0: 0  Pars-diag/diag(X2)=1.48e-15
+  X1=  283382.7 X2=    4096.0 all_checks=True  T1/X1=0.499 M1/(sqrtX1 L)=0.337 V2/(X2 logX2)=0.196 max|E|/(M1 sqrtV2)=0.033 proof_ratio=0.887 #R=0: 0  Pars-diag/diag(X2)=1.48e-15
+  X1= 2357111.2 X2=    4096.0 all_checks=True  T1/X1=0.500 M1/(sqrtX1 L)=0.347 V2/(X2 logX2)=0.196 max|E|/(M1 sqrtV2)=0.037 proof_ratio=0.316 #R=0: 0  Pars-diag/diag(X2)=1.48e-15
+  X1=  283382.7 X2=  283382.7 all_checks=True  T1/X1=0.499 M1/(sqrtX1 L)=0.337 V2/(X2 logX2)=0.125 max|E|/(M1 sqrtV2)=0.057 proof_ratio=0.102 #R=0: 0  Pars-diag/diag(X2)=9.09e+00
+  X1=  283382.7 X2=   34069.6 all_checks=True  T1/X1=0.499 M1/(sqrtX1 L)=0.337 V2/(X2 logX2)=0.158 max|E|/(M1 sqrtV2)=0.038 proof_ratio=0.303 #R=0: 0  Pars-diag/diag(X2)=1.02e+00
+m=6006 phi=1440 L=8.701
+  X1=    6006.0 X2=    6006.0 all_checks=True  T1/X1=0.488 M1/(sqrtX1 L)=0.287 V2/(X2 logX2)=0.143 max|E|/(M1 sqrtV2)=0.056 proof_ratio=2.809 #R=0: 0  Pars-diag/diag(X2)=1.35e-15
+  X1=   52255.3 X2=    6006.0 all_checks=True  T1/X1=0.496 M1/(sqrtX1 L)=0.293 V2/(X2 logX2)=0.143 max|E|/(M1 sqrtV2)=0.041 proof_ratio=0.956 #R=0: 0  Pars-diag/diag(X2)=1.35e-15
+  X1=  454647.9 X2=    6006.0 all_checks=True  T1/X1=0.499 M1/(sqrtX1 L)=0.319 V2/(X2 logX2)=0.143 max|E|/(M1 sqrtV2)=0.039 proof_ratio=0.351 #R=0: 0  Pars-diag/diag(X2)=1.35e-15
+  X1= 3955670.4 X2=    6006.0 all_checks=True  T1/X1=0.500 M1/(sqrtX1 L)=0.293 V2/(X2 logX2)=0.143 max|E|/(M1 sqrtV2)=0.051 proof_ratio=0.109 #R=0: 0  Pars-diag/diag(X2)=1.35e-15
+  X1=  454647.9 X2=  454647.9 all_checks=True  T1/X1=0.499 M1/(sqrtX1 L)=0.319 V2/(X2 logX2)=0.102 max|E|/(M1 sqrtV2)=0.051 proof_ratio=0.041 #R=0: 0  Pars-diag/diag(X2)=2.05e+01
+  X1=  454647.9 X2=   52255.3 all_checks=True  T1/X1=0.499 M1/(sqrtX1 L)=0.319 V2/(X2 logX2)=0.112 max|E|/(M1 sqrtV2)=0.043 proof_ratio=0.116 #R=0: 0  Pars-diag/diag(X2)=2.40e+00
+m=30030 phi=5760 L=10.310
+  X1=   30030.0 X2=   30030.0 all_checks=True  T1/X1=0.495 M1/(sqrtX1 L)=0.267 V2/(X2 logX2)=0.147 max|E|/(M1 sqrtV2)=0.033 proof_ratio=2.654 #R=0: 0  Pars-diag/diag(X2)=1.39e-15
+  X1=  309607.9 X2=   30030.0 all_checks=True  T1/X1=0.499 M1/(sqrtX1 L)=0.299 V2/(X2 logX2)=0.147 max|E|/(M1 sqrtV2)=0.021 proof_ratio=0.920 #R=0: 0  Pars-diag/diag(X2)=1.39e-15
+  X1= 3192042.3 X2=   30030.0 all_checks=True  T1/X1=0.500 M1/(sqrtX1 L)=0.310 V2/(X2 logX2)=0.147 max|E|/(M1 sqrtV2)=0.021 proof_ratio=0.296 #R=0: 0  Pars-diag/diag(X2)=1.39e-15
+  X1=32909803.0 X2=   30030.0 all_checks=True  T1/X1=0.500 M1/(sqrtX1 L)=0.317 V2/(X2 logX2)=0.147 max|E|/(M1 sqrtV2)=0.026 proof_ratio=0.094 #R=0: 0  Pars-diag/diag(X2)=1.39e-15
+  X1= 3192042.3 X2= 3192042.3 all_checks=True  T1/X1=0.500 M1/(sqrtX1 L)=0.310 V2/(X2 logX2)=0.110 max|E|/(M1 sqrtV2)=0.027 proof_ratio=0.030 #R=0: 0  Pars-diag/diag(X2)=3.10e+01
+  X1= 3192042.3 X2=  309607.9 all_checks=True  T1/X1=0.500 M1/(sqrtX1 L)=0.310 V2/(X2 logX2)=0.133 max|E|/(M1 sqrtV2)=0.019 proof_ratio=0.096 #R=0: 0  Pars-diag/diag(X2)=3.19e+00
