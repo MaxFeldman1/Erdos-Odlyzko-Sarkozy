@@ -15,8 +15,8 @@
 - Deliverables (decided with the user on 2026-11-23):
   1. GRH-conditional approximations to EOS (`coveredBy_of_grhBounds`, `coveredBy_log_sq`, `coveredByAsym_m_log_cube`,
      `coveredBy_three_primes`), with GRH entering only through named GRH-consequence hypotheses.
-  2. The gap theorem, in the shape `eos_of_H4 (hT : TypeISifted) (hH : H4 η) : Conjecture` (Buchstab route; see
-     notes/brainstorm/r3-synthesis.md §5). It does **not** mention GRH. `TypeISifted` and any other asymptotic input are
+  2. The gap theorem, in the shape `eos_of_H4 (hT : TypeISifted) (hR : RoughCounts) (hH : H4 η λ) : Conjecture` (Buchstab
+     route; see notes/brainstorm/r3-synthesis.md §5 and notes/routes/E-buchstab-H4.md, which has the complete paper proof). It does **not** mention GRH. `TypeISifted` and any other asymptotic input are
      named `Prop`s for cited *unconditional* theorems. `H4` is the single beyond-GRH hypothesis isolating the gap.
      Do not add GRH as an unused hypothesis. Every docstring must say plainly that H4 is stronger than EOS and not
      known to follow from GRH.
